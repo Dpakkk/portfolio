@@ -13,7 +13,7 @@ const kaisei = localFont({
 
 export const metadata = {
   title: {
-    default: "Bikash Pokharel",
+    default: "Bikaash Pokharel",
     template: "%s | Bikash Pokharel",
   },
   robots: {
