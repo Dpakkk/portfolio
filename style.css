@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 /* Reset styles */
 * {
     margin: 0;
@@ -7,29 +9,29 @@
   
   /* Global styles */
   body {
-    font-family: 'Inter', sans-serif;;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    color: #333;
-    background-color: #fff;
+    color: #fff;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
   }
 
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
   
-  :root {
-    --white-grad-1: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
-  }
-  
-  .bg-white-grad-1 {
-    background: var(--white-grad-1);
-  }
-  
+
   /* Main content styles */
   .main {
     max-width: 1200px;
@@ -43,6 +45,7 @@
   }
   
   .intro-title {
+    font-family: 'Roboto', sans-serif;
     font-size: 3rem;
     font-weight: 500;
     margin-bottom: 1rem;
@@ -51,11 +54,12 @@
   .intro-subtitle {
     font-size: rem;
     font-weight: 500;
-    color: #333;
     margin-bottom: 2rem;
+    text-transform: uppercase;
   }
   
   .intro-description {
+    font-family: 'Open Sans', sans-serif;
     font-size: 1.2rem;
     margin-bottom: 2rem;
   }
